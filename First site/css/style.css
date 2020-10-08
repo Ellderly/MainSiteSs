@@ -1,0 +1,156 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+}
+h3 {
+  font-size: 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #212121;
+  margin: 0;
+}
+p {
+  font-size: 14px;
+  color: #86878b;
+  line-height: 1.43;
+}
+.line {
+  margin: 30px 0;
+  width: 64px;
+  height: 2px;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  background-color: black;
+}
+.header .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 22px 40px;
+}
+.header .container .logo {
+  width: 100px;
+}
+.header .container nav ul {
+  display: grid;
+  grid-auto-flow: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header .container nav ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.69);
+  transition: 0.2s;
+}
+.header .container nav ul li a:hover {
+  color: #fff;
+}
+.main .head-section {
+  position: relative;
+  background-image: url(../images/image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 140px 0;
+}
+.main .head-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.main .head-section .container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main .head-section .container .content {
+  max-width: 95%;
+}
+.main .head-section .container .content .big-image-logo {
+  transform: translateY(-20px);
+}
+.main .head-section .container .content h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0;
+}
+.main .head-section .container .content .line {
+  background-color: #fff;
+}
+.main .head-section .container .content .big-p {
+  font-size: 16px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.44;
+  font-weight: 300;
+}
+.main .head-section .container .content .download-button {
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+  padding: 10px 30px;
+  margin: 40px 0 0;
+  border: 1px solid #fff;
+  transition: 0.2s;
+}
+.main .head-section .container .content .download-button:hover {
+  background-color: #fff;
+  color: black;
+}
+.main .head-section .container .block-form {
+  width: 360px;
+  margin-left: auto;
+  background-color: #fff;
+}
+.main .head-section .container .block-form h3 {
+  color: #333333;
+  padding: 15px;
+  background-color: #f5f5f5;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+}
+.main .head-section .container .block-form h3 a {
+  text-decoration: none;
+  color: #ff8b38;
+}
+.main .head-section .container .block-form .form {
+  width: 285px;
+  margin: 0 auto;
+}
+.main .head-section .container .block-form .form input {
+  display: block;
+  margin: 35px 0 0 0;
+  padding: 0 0 5px 10px;
+  box-sizing: border-box;
+  width: 100%;
+  background: none;
+  color: #bdbdbd;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+}
+.main .head-section .container .block-form .form input:focus {
+  outline: none;
+}

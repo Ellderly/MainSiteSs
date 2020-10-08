@@ -3,9 +3,18 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
 h1,
 h2 {
   font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+}
+h3 {
+  font-size: 20px;
 }
 h1,
 h2,
@@ -13,8 +22,18 @@ h3,
 h4,
 h5 {
   color: #212121;
+  margin: 0;
 }
 p {
+  font-size: 14px;
   color: #86878b;
   line-height: 1.43;
+}
+.line {
+  margin: 30px 0;
+  width: 64px;
+  height: 2px;
+}
+a {
+  text-decoration: none;
 }

@@ -1,1 +1,154 @@
-@import: "mixin";
+@import "mixins";
+
+.header {
+    background-color: black;
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 22px 40px;
+
+        .logo {
+            width: 100px;
+        }
+
+        nav {
+            ul {
+                display: grid;
+                grid-auto-flow: column;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: rgba(255, 255, 255, 0.69);
+                        transition: .2s;
+
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main {
+    .head-section {
+        position: relative;
+        background-image: url(../images/image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 140px 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+
+        }
+
+        .container {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .content {
+                max-width: 95%;
+
+                .big-image-logo {
+                    transform: translateY(-20px);
+                }
+
+                h1 {
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-weight: normal;
+                    margin: 0;
+                }
+
+                .line {
+                    background-color: #fff;
+                }
+
+                .big-p {
+                    font-size: 16px;
+                    margin: 0;
+                    color: rgba(255, 255, 255, 0.7);
+                    font-family: 'Raleway', sans-serif;
+                    line-height: 1.44;
+                    font-weight: 300;
+                }
+
+                .download-button {
+                    display: inline-block;
+                    font-size: 15px;
+                    color: #fff;
+                    padding: 10px 30px;
+                    margin: 40px 0 0;
+                    border: 1px solid #fff;
+                    transition: .2s;
+
+                    &:hover {
+                        background-color: #fff;
+                        color: black;
+                    }
+                }
+            }
+
+            .block-form {
+                width: 360px;
+                margin-left: auto;
+                background-color: #fff;
+
+                h3 {
+                    color: #333333;
+                    padding: 15px;
+                    background-color: @bg-color;
+                    text-align: center;
+                    border-radius: 5px 5px 0 0;
+
+
+                    a {
+                        text-decoration: none;
+                        color: @orange;
+                    }
+                }
+
+                .form {
+                    width: 285px;
+                    margin: 0 auto;
+
+                    input {
+                        display: block;
+                        margin: 35px 0 0 0;
+                        padding: 0 0 5px 10px;
+                        box-sizing: border-box;
+                        width: 100%;
+                        background: none;
+                        color: #bdbdbd;
+                        border: none;
+                        border-bottom: 1px solid #bdbdbd;
+                        // --- Сделать анимацию нижнего бордера
+
+                        &:focus {
+                            outline: none;
+
+                        }
+
+                        .submit {
+                            // ---Сделать кнопку --- 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

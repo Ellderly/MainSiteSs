@@ -44,6 +44,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 22px 40px;
+  align-items: center;
 }
 .header .container .logo {
   width: 100px;
@@ -121,9 +122,12 @@ a {
   color: black;
 }
 .main .head-section .container .block-form {
+  position: relative;
   width: 360px;
+  max-height: 360px;
   margin-left: auto;
   background-color: #fff;
+  border-radius: 5px;
 }
 .main .head-section .container .block-form h3 {
   color: #333333;
@@ -142,6 +146,7 @@ a {
 }
 .main .head-section .container .block-form .form input {
   display: block;
+  position: relative;
   margin: 35px 0 0 0;
   padding: 0 0 5px 10px;
   box-sizing: border-box;
@@ -153,4 +158,25 @@ a {
 }
 .main .head-section .container .block-form .form input:focus {
   outline: none;
+  border-bottom: 1px solid #ff8b38;
+}
+.main .head-section .container .block-form .form input::placeholder {
+  color: #bdbdbd;
+}
+.main .head-section .container .block-form .form input.submit {
+  border: none;
+  color: #fff;
+  background: #ff8b38;
+  position: absolute;
+  font-size: 15px;
+  padding: 20px;
+  font-weight: 600;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.main .head-section .container .block-form .form input.submit:hover {
+  background: #ff6a38;
 }

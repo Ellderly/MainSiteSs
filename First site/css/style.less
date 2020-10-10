@@ -7,6 +7,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 22px 40px;
+        align-items: center;
 
         .logo {
             width: 100px;
@@ -104,9 +105,12 @@
             }
 
             .block-form {
+                position: relative;
                 width: 360px;
+                max-height: 360px;
                 margin-left: auto;
                 background-color: #fff;
+                border-radius: 5px;
 
                 h3 {
                     color: #333333;
@@ -128,6 +132,7 @@
 
                     input {
                         display: block;
+                        position: relative;
                         margin: 35px 0 0 0;
                         padding: 0 0 5px 10px;
                         box-sizing: border-box;
@@ -136,15 +141,31 @@
                         color: #bdbdbd;
                         border: none;
                         border-bottom: 1px solid #bdbdbd;
-                        // --- Сделать анимацию нижнего бордера
-
+    
                         &:focus {
                             outline: none;
-
+                            border-bottom: 1px solid @orange;
+                        }
+                        &::placeholder{
+                            color: #bdbdbd;
                         }
 
-                        .submit {
-                            // ---Сделать кнопку --- 
+                        &.submit {
+                            border:none;
+                            color: #fff;
+                            background: @orange;
+                            position: absolute;
+                            font-size: 15px;
+                            padding: 20px;
+                            font-weight: 600;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            cursor: pointer;
+                            transition: .2s;
+                                &:hover{
+                                    background: spin(@orange, -10%);
+                                }
                         }
                     }
                 }

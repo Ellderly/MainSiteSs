@@ -206,7 +206,6 @@
                 display: grid;
                 grid-template-columns: auto 1fr;
                 gap: 100px;
-                padding: 0;
                 .tabs{
                     display: grid;
                     list-style: none;
@@ -259,8 +258,53 @@
                     .image img{
                         width: 100%;
                     }
-                
+                        &.slider-1{
+                            display: grid;
+                        }
                 }
             }
+    }
+    .main-content-2{
+        padding: 110px;
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 130px;
+                .content-text{
+                    .line{
+                        background: @orange;
+                    }
+                    .grid-list{
+                        display: grid;
+                        gap: 25px;
+                        margin: 40px 0 0 0;
+                        .list-item{
+                            display: grid;
+                            grid-template-columns: auto 1fr;
+                            gap: 25px;
+                                img{
+                                    width: 40px;
+                                }
+                                .text p{
+                                    margin: 10px 0 0 0;
+                                }
+                        }
+                    }
+                }
+        }
+    }
+    .main-content-3{
+        padding: 75px 0;
+        background: @bg-color;
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 130px;
+            .content-text{
+                .line{
+                    background-color:  @orange;
+                }
+            }
+        }
     }
 }

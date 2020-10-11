@@ -37,3 +37,19 @@ p {
 a {
   text-decoration: none;
 }
+.animation {
+  animation-name: animationshow;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes animationshow {
+  0% {
+    position: relative;
+    top: -300px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}

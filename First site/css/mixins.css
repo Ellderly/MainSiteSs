@@ -12,6 +12,7 @@ h1,
 h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 36px;
+  font-weight: normal;
 }
 h3 {
   font-size: 20px;
@@ -31,6 +32,7 @@ p {
   font-size: 14px;
   color: #86878b;
   line-height: 1.43;
+  margin: 0;
 }
 .line {
   margin: 30px 0;
@@ -39,6 +41,7 @@ p {
 }
 a {
   text-decoration: none;
+  font-family: Raleway;
 }
 .animation {
   animation-name: animationshow;

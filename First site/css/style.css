@@ -12,6 +12,7 @@ h1,
 h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 36px;
+  font-weight: normal;
 }
 h3 {
   font-size: 20px;
@@ -31,6 +32,7 @@ p {
   font-size: 14px;
   color: #86878b;
   line-height: 1.43;
+  margin: 0;
 }
 .line {
   margin: 30px 0;
@@ -39,6 +41,7 @@ p {
 }
 a {
   text-decoration: none;
+  font-family: Raleway;
 }
 .animation {
   animation-name: animationshow;
@@ -293,6 +296,9 @@ a {
   grid-template-columns: 1fr 1fr;
   gap: 130px;
 }
+.main .main-content-2 .container img {
+  width: 100%;
+}
 .main .main-content-2 .container .content-text .line {
   background: #ff8b38;
 }
@@ -323,4 +329,236 @@ a {
 }
 .main .main-content-3 .container .content-text .line {
   background-color: #ff8b38;
+}
+.main .main-content-3 .container img {
+  width: 100%;
+}
+.main .main-content-4 {
+  padding: 100px 0;
+  text-align: center;
+}
+.main .main-content-4 .container .title .line {
+  background: #ff8b38;
+  margin: 30px auto;
+}
+.main .main-content-4 .container .grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 70px;
+}
+.main .main-content-4 .container .grid-wrapper .grid-item h3 {
+  padding: 20px 0;
+}
+.main .main-content-4 .container .grid-wrapper .grid-item p {
+  margin: 0;
+}
+.main .price-wrapper {
+  padding: 100px 0;
+  text-align: center;
+  background: #f5f5f5;
+}
+.main .price-wrapper .container .title .line {
+  background: #ff8b38;
+  margin: 30px auto;
+}
+.main .price-wrapper .container .title p {
+  margin: 0;
+}
+.main .price-wrapper .container .price-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin: 70px 0 0 0;
+}
+.main .price-wrapper .container .price-items .link {
+  cursor: pointer;
+  background: #333;
+}
+.main .price-wrapper .container .price-items .link a {
+  display: block;
+  color: #fff;
+}
+.main .price-wrapper .container .price-items .link a.version {
+  padding: 15px 0;
+  border-bottom: 1px solid #fff;
+}
+.main .price-wrapper .container .price-items .link a.price {
+  font-size: 94px;
+  font-weight: bold;
+}
+.main .price-wrapper .container .price-items .link a.price .sub {
+  font-size: 35px;
+}
+.main .price-wrapper .container .price-items .link .under-text {
+  padding: 5px 0 15px 0;
+  margin: 0;
+}
+.main .price-wrapper .container .price-items .link .long-line {
+  padding: 5px 0;
+  background: #ff8b38;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
+.main .price-wrapper .container .price-items .link .long-line.line-text {
+  padding: 10px 0;
+}
+.main .price-wrapper .container .price-items ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main .price-wrapper .container .price-items ul li {
+  background: #fff;
+  color: #86878b;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 14px 0;
+  margin: 1px 0;
+}
+.main .reviews {
+  padding: 100px 0;
+}
+.main .reviews .container .title {
+  text-align: center;
+}
+.main .reviews .container .title .line {
+  background: #ff8b38;
+  margin: 30px auto;
+}
+.main .reviews .container .grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 50px 0 0 0;
+  gap: 120px;
+}
+.main .reviews .container .grid-wrapper .grid-item .review {
+  padding: 24px 13px;
+  background: #f5f5f5;
+  font-style: italic;
+  margin: 0 0 10px 0;
+}
+.main .reviews .container .grid-wrapper .grid-item .persone {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 15px;
+}
+.main .our-design {
+  padding: 70px 0 60px 0;
+  background-image: url(../images/u-25-state-0.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+.main .our-design::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.main .our-design .container {
+  position: relative;
+}
+.main .our-design .container h2,
+.main .our-design .container p {
+  color: #fff;
+}
+.main .our-design .container .line {
+  background: #fff;
+  margin: 30px auto;
+}
+.main .our-design .container .download-button {
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+  padding: 10px 30px;
+  margin: 35px auto 0;
+  border: 1px solid #fff;
+  transition: 0.2s;
+}
+.main .our-design .container .download-button:hover {
+  background-color: #fff;
+  color: black;
+}
+.main .contact-us {
+  padding: 100px 0 80px 0;
+}
+.main .contact-us .container .title {
+  text-align: center;
+}
+.main .contact-us .container .title .line {
+  margin: 30px auto;
+  background-color: #ff8b38;
+}
+.main .contact-us .container .form .grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 65px;
+  margin: 80px 0 0;
+}
+.main .contact-us .container .form .grid-wrapper .login {
+  display: grid;
+  gap: 30px;
+}
+.main .contact-us .container .form .grid-wrapper input,
+.main .contact-us .container .form .grid-wrapper textarea {
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  resize: none;
+  color: #bdbdbd;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  padding: 0 0 0 12px;
+}
+.main .contact-us .container .form .grid-wrapper input::placeholder,
+.main .contact-us .container .form .grid-wrapper textarea::placeholder {
+  color: #bdbdbd;
+}
+.main .contact-us .container .form .grid-wrapper input:focus,
+.main .contact-us .container .form .grid-wrapper textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #ff8b38;
+}
+.main .contact-us .container .form .message {
+  display: block;
+  font-size: 15px;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  margin: 35px auto 0;
+  background: #ff8b38;
+  transition: 0.2s;
+}
+.main .contact-us .container .form .message:hover {
+  background: #ff6a38;
+}
+.footer {
+  background-color: black;
+  padding: 25px 0 15px;
+}
+.footer .links {
+  width: 340px;
+  margin: 0 auto;
+}
+.footer .links ul {
+  display: grid;
+  grid-auto-flow: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .links ul li a img {
+  width: 23px;
+}
+.footer .company {
+  margin: 10px 0 0 0;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
 }

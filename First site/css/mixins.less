@@ -1,5 +1,10 @@
 // main style.less
 
+@media(max-width: 700px){
+    body.lock{
+        overflow: hidden;
+    }
+}
 
 //vars  
 @orange: #ff8b38;
@@ -78,8 +83,23 @@ a {
             opacity: 0;
         }
         100%{
-            // position: relative;
+           position: relative; 
             top: 0;
+            opacity: 1;
+        }
+    }
+   
+}
+@media(max-width: 920px){
+    @keyframes animationshow{
+        0%{
+            position: relative;
+            left: -300px;
+            opacity: 0;
+        }
+        100%{
+            // position: relative;
+            left: 0;
             opacity: 1;
         }
     }

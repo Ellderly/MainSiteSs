@@ -274,6 +274,7 @@ a {
 .main .head-section .container .block-form .form {
   width: 285px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 .main .head-section .container .block-form .form input {
   display: block;
@@ -846,6 +847,8 @@ a {
 .footer .links ul {
   display: grid;
   grid-auto-flow: column;
+  position: relative;
+  overflow: hidden;
   list-style: none;
   margin: 0;
   padding: 0;

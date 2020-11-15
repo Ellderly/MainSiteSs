@@ -1,0 +1,70 @@
+// font-family: 'Inter', sans-serif;       первый шрифт
+// font-family: 'Mulish', sans-serif;      второй шрифт
+// font-family: 'Playfair Display', serif;  для заголовка
+
+
+
+//vars ---
+@orange: #fb8f1d;
+//vars +++
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+h1{
+    color: #202336;    
+    font-size: 64px;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    
+}
+h2{
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+}
+h3{
+    font-size: 19px;
+    margin: 0;
+}
+p{
+    font-family: Mulish;
+    line-height: 1.76;
+    font-size: 17px;
+    color: #7d7987;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    font-family: Inter;
+}
+.container{
+    max-width: 1250px;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+.abs-image{
+    position: absolute;
+    z-index: -5;
+}
+.btn-orange{
+    display: inline-block;
+    color: #fff;
+    font-family: Mulish;
+    font-size: 16px;
+    padding: 12px 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: @orange;
+    margin: 50px 0 0;
+    cursor: pointer;
+    transition: .2s;
+        &:focus{
+            outline: none;
+        }
+        &:hover{
+            background-color: spin(@orange, -10%);
+        }
+}

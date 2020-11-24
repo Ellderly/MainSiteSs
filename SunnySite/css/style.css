@@ -273,9 +273,18 @@ main .section-one .img-abs-3 {
   }
 }
 @media (max-width: 650px) {
+  main .section-one {
+    padding: 80px 0 30px;
+  }
   main .section-one .container {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+  main .section-one .container .content-text h1 {
+    margin: 0 0 40px;
+  }
+  main .section-one .container .content-text .form-finder .grid-form-block {
+    gap: 10px;
   }
 }
 main .section-two {
@@ -311,6 +320,9 @@ main .section-two .img-abs-12 {
   }
 }
 @media (max-width: 650px) {
+  main .section-two {
+    padding: 30px 0;
+  }
   main .section-two .container {
     display: block;
   }
@@ -368,6 +380,9 @@ main .section-three .img-abs-23 {
   }
 }
 @media (max-width: 600px) {
+  main .section-three {
+    padding: 30px 0;
+  }
   main .section-three .container .text {
     display: block;
   }
@@ -406,6 +421,9 @@ main .section-four .img-abs-33 {
   }
 }
 @media (max-width: 650px) {
+  main .section-four {
+    padding: 30px 0;
+  }
   main .section-four .container {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -426,7 +444,7 @@ main .section-five .container {
   gap: 130px;
 }
 main .section-five .container .content-text .inside-content {
-  margin-top: 100px;
+  margin: 100px 0 0 0;
 }
 main .section-five .container .content-text .inside-content .stars {
   display: grid;
@@ -471,6 +489,9 @@ main .section-five .img-abs-42 {
   }
 }
 @media (max-width: 650px) {
+  main .section-five {
+    padding: 30px 0;
+  }
   main .section-five .container {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -479,6 +500,9 @@ main .section-five .img-abs-42 {
     display: block;
     width: 60%;
     margin: 0 auto;
+  }
+  main .section-five .container .content-text .inside-content {
+    margin: 40px 0 0 0;
   }
 }
 main .section-six {
@@ -544,6 +568,11 @@ main .section-six .img-abs-23 {
 @media (max-width: 768px) {
   main .section-six {
     padding: 50px 0;
+  }
+}
+@media (max-width: 650px) {
+  main .section-six {
+    padding: 30px 0;
   }
 }
 footer {

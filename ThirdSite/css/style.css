@@ -200,6 +200,9 @@ p {
   .header-section .header nav ul li {
     margin: 0 0 20px 0;
   }
+  .header-section .header nav ul li a {
+    font-size: 20px;
+  }
   .header-section .header nav .login-menu {
     display: block;
     align-items: normal;
@@ -208,6 +211,7 @@ p {
     display: block;
     text-align: left;
     margin: 0 0 20px 16px;
+    font-size: 20px;
   }
   .header-section .header nav .login-menu .get-started {
     text-align: left;

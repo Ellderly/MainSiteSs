@@ -839,6 +839,7 @@ a {
 .footer {
   background-color: black;
   padding: 25px 0 15px;
+  overflow: hidden;
 }
 .footer .links {
   width: 340px;
@@ -852,6 +853,9 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.footer .links ul li {
+  width: 25px;
 }
 .footer .links ul li a img {
   width: 23px;

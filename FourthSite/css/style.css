@@ -7,6 +7,11 @@ body {
   margin: 0;
   font-family: 'Rubik', sans-serif;
 }
+@media (max-width: 950px) {
+  body.lock {
+    overflow: hidden;
+  }
+}
 .container {
   max-width: 1250px;
   padding: 0 20px;
@@ -168,6 +173,10 @@ p {
   .header .container {
     padding-top: 20px;
   }
+  .header .container .burger {
+    display: block;
+    position: relative;
+  }
   .header .container .menu_wrapper {
     display: none;
     position: absolute;
@@ -175,7 +184,7 @@ p {
     top: 0;
     background: #222;
     width: 100%;
-    height: 100vh;
+    height: 100%;
   }
   .header .container .menu_wrapper.active {
     display: flex;
@@ -211,7 +220,7 @@ p {
   }
   .header .container .login a {
     display: block;
-    margin: 15px 0 0 0 ;
+    margin: 15px 0 0 0;
   }
   .header .container .login .sign-in {
     margin: 0;
@@ -259,6 +268,11 @@ p {
 .main .sub-header .flex-wrapper img {
   width: 100%;
 }
+@media (max-width: 768px) {
+  .main .sub-header .flex-wrapper {
+    display: block;
+  }
+}
 .main .quantity {
   padding: 100px 0;
 }
@@ -284,6 +298,24 @@ p {
 }
 .main .quantity .grid-wrapper .grid-item + .grid-item {
   border-left: 2px solid rgba(128, 128, 128, 0.1);
+}
+@media (max-width: 600px) {
+  .main .quantity .grid-wrapper .grid-item {
+    padding: 0;
+  }
+  .main .quantity .grid-wrapper .grid-item .grid-item_element {
+    flex-direction: column;
+  }
+  .main .quantity .grid-wrapper .grid-item .grid-item_element .grid_text {
+    text-align: center;
+    margin-left: 0;
+    margin: 15px 0 0 0;
+  }
+}
+@media (max-width: 350px) {
+  .main .quantity .grid-wrapper {
+    padding: 15px 0;
+  }
 }
 .main .opportunity {
   padding: 0 0 95px 0;
@@ -318,6 +350,15 @@ p {
 .main .opportunity .grid-wrapper .grid-item .list li:nth-child(1) {
   margin: 30px 0 0 0;
 }
+@media (max-width: 768px) {
+  .main .opportunity .grid-wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .main .opportunity .grid-wrapper aside.grid-item {
+    order: 2;
+  }
+}
 .main .plan {
   padding: 80px 0;
   background-image: linear-gradient(to top, #f8f8f8, #f8f8f8);
@@ -325,6 +366,7 @@ p {
 .main .plan .container .grid-wrapper {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .main .plan .container .grid-wrapper .grid-item {
   display: flex;
@@ -395,6 +437,12 @@ p {
 }
 .main .plan .container .grid-wrapper .grid-item:hover {
   border: solid 2px #f53838;
+}
+@media (max-width: 425px) {
+  .main .plan .container .grid-wrapper .grid-item {
+    height: 680px;
+    padding: 70px 50px 40px;
+  }
 }
 .main .network {
   padding: 80px 0 0;
@@ -581,6 +629,22 @@ p {
   border: solid 2px rgba(255, 255, 255, 0);
   color: #fff;
 }
+@media (max-width: 768px) {
+  .main .section-slider .subscribe .flex-wrapper {
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 550px) {
+  .main .section-slider .subscribe .flex-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .main .section-slider .subscribe .flex-wrapper .btn {
+    width: 200px;
+    height: 40px;
+    margin: 20px 0 0 0;
+  }
+}
 .footer {
   padding: 180px 0 80px;
   background-color: #f8f8f8;
@@ -657,4 +721,10 @@ p {
 }
 .footer .container .footer_links ul li + li a:hover {
   color: #22252c;
+}
+@media (max-width: 768px) {
+  .footer .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }

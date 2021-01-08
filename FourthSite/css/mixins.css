@@ -1,0 +1,73 @@
+*:focus,
+html:focus {
+  outline: none;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+}
+.container {
+  max-width: 1250px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  font-size: calc(12px + 4 * (100vw / 1300));
+  transition: 0.2s;
+}
+h1 {
+  font-size: calc(30px + 20 * (100vw / 1300));
+  color: #272d4e;
+}
+h2 {
+  font-size: calc(25px + 10 * (100vw / 1300));
+  color: #272d4e;
+  margin: 0;
+  line-height: 1.43;
+}
+h3 {
+  font-size: calc(15px + 10 * (100vw / 1300));
+  color: #272d4e;
+  margin: 0;
+}
+h4 {
+  font-size: 18px;
+  color: #272d4e;
+}
+p {
+  font-size: calc(10px + 6 * (100vw / 1300));
+  color: #94a2b3;
+  line-height: 1.88;
+  margin: 0;
+}
+.section-title {
+  text-align: center;
+  padding: 0 0 65px 0;
+  max-width: 555px;
+  margin: 0 auto;
+}
+.section-title p {
+  margin: 30px 0 0 0;
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: calc(30px + (20 + 20 * 0.7) * ((100vw - 320px) / 1300));
+  }
+  h2 {
+    font-size: calc(25px + (10 + 10 * 0.7) * ((100vw - 320px) / 1300));
+  }
+  h3 {
+    font-size: calc(15px + (10 + 10 * 0.7) * ((100vw - 320px) / 1300));
+  }
+  p,
+  a {
+    font-size: calc(10px + (6 + 6 * 0.7) * ((100vw - 320px) / 1300));
+  }
+}

@@ -467,6 +467,7 @@ p {
   align-items: center;
 }
 .main .section-slider .slider .slider_item .head-person .raiting img {
+  width: 13px;
   margin: 0 0 0 10px;
 }
 .main .section-slider .slider .slider_item p {

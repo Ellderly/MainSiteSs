@@ -309,6 +309,7 @@ header .screen img {
   background-color: #4452fe;
   padding: 15px 30px;
   color: #fff;
+  transition: 0.2s;
   font-weight: 500;
 }
 .openType .block-wrapper .content .btn:hover {
@@ -317,4 +318,46 @@ header .screen img {
 }
 .openType .block-wrapper img {
   width: 100%;
+}
+.footer {
+  padding: 100px 0;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .container .menu-wrapper {
+  display: flex;
+  gap: 90px;
+}
+.footer .container .menu-wrapper .menu-list .heading {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 40px;
+}
+.footer .container .menu-wrapper .menu-list li {
+  margin: 0 0 20px;
+}
+.footer .container .menu-wrapper .menu-list li a {
+  color: #fff;
+  transition: 0.2s;
+}
+.footer .container .menu-wrapper .menu-list li a:hover {
+  color: #4452fe;
+}
+.footer .container .contacts .block {
+  display: flex;
+  gap: 15px;
+  transition: 0.2s;
+  color: #fff;
+}
+.footer .container .contacts .block:first-child img {
+  margin-left: -6px;
+}
+.footer .container .contacts .block:last-child {
+  gap: 30px;
+  margin: 20px 0 0 0;
+}
+.footer .container .contacts .block:hover {
+  color: #4452fe;
 }

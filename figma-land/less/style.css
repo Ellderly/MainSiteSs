@@ -14,6 +14,11 @@ body {
 section {
   padding: 160px 0 50px;
 }
+@media all and (max-width: 900px) {
+  section {
+    padding: 110px 0 50px;
+  }
+}
 P {
   font-size: 17px;
   line-height: 1.5;
@@ -230,6 +235,18 @@ header .screen img {
 .contents .wrapper .block .btn:hover {
   background-color: #00c9c9;
 }
+@media all and (max-width: 1024px) {
+  .contents .wrapper .block {
+    padding: 40px 15px;
+  }
+}
+@media all and (max-width: 950px) {
+  .contents .wrapper {
+    width: max-content;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
 .gallery .gallery-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -249,6 +266,13 @@ header .screen img {
 .gallery .gallery-wrapper .block-image:nth-child(5) img,
 .gallery .gallery-wrapper .block-image:nth-child(7) img {
   width: 435px;
+}
+@media all and (max-width: 840px) {
+  .gallery .block-image:nth-child(5),
+  .gallery .block-image:nth-child(6),
+  .gallery .block-image:nth-child(7) {
+    display: none;
+  }
 }
 .partners .flex-list {
   display: flex;
@@ -272,6 +296,7 @@ header .screen img {
   display: flex;
   align-items: center;
   gap: 23px;
+  color: #fff;
 }
 .testimonials .flex-list .block-wrapper .head-content .text h5,
 .testimonials .flex-list .block-wrapper .head-content .text p {
@@ -319,6 +344,20 @@ header .screen img {
 .openType .block-wrapper img {
   width: 100%;
 }
+@media all and (max-width: 1024px) {
+  .openType .block-wrapper .content h2 {
+    font-size: 35px;
+  }
+}
+@media all and (max-width: 900px) {
+  .openType .block-wrapper {
+    display: block;
+    padding: 45px;
+  }
+  .openType .block-wrapper .content {
+    padding: 0 0 50px;
+  }
+}
 .footer {
   padding: 100px 0;
 }
@@ -360,4 +399,9 @@ header .screen img {
 }
 .footer .container .contacts .block:hover {
   color: #4452fe;
+}
+@media all and (max-width: 850px) {
+  .footer .container .menu-wrapper {
+    gap: 40px;
+  }
 }

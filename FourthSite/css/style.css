@@ -217,6 +217,7 @@ p {
   }
   .header .container .login.active {
     display: block;
+    margin: 55px 0 0 0;
   }
   .header .container .login a {
     display: block;

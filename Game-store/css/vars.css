@@ -1,0 +1,68 @@
+.container {
+  max-width: 1150px;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+}
+.btn {
+  display: inline-block;
+  font-weight: bold;
+  margin: 20px 0 0 0;
+  font-size: 20px;
+  color: #fff;
+  padding: 20px 29px;
+  background: #f1433a;
+  box-shadow: 0px 4px 39px rgba(231, 87, 87, 0.25);
+  border-radius: 15px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.btn:hover {
+  color: #f1433a;
+  background: #fff;
+}
+.section {
+  padding: 50px 0 0 0;
+  color: #fff;
+}
+h4 {
+  font-size: 20px;
+}
+.money {
+  font-size: 30px;
+  font-weight: 600;
+}
+.none {
+  display: none;
+}
+.title {
+  display: flex;
+  margin: 0 0 50px 0;
+  align-items: flex-start;
+}
+.title h2 {
+  font-weight: bold;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin: 0 0 0 20px;
+}
+.title p {
+  margin: 0 0 0 20px;
+}
+.cup-text {
+  color: #5a5a5a;
+  font-size: 14px;
+}
+.green-bg-text {
+  display: flex;
+  gap: 11px;
+  padding: 14px 17px;
+  background: rgba(81, 179, 127, 0.06);
+  border: 1px outset #51b37f;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+.green-bg-text p {
+  margin: 0;
+}

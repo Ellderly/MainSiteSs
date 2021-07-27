@@ -24,14 +24,25 @@ popupBtn.addEventListener('click', function() {
     }
 })
 
-const del = document.querySelectorAll('.popup__delete');
-const mainBlock = document.querySelectorAll('.popup__boost');
-function delBlock() {
+// const del = document.querySelectorAll('.popup__delete');
+// const mainBlock = document.querySelectorAll('.popup__boost');
+// function delBlock() {
+//     for (let  i= 0;  i < mainBlock.length; i++) {
+//         mainBlock[i].classList.add('none');
+//     }
+// }
+// for(let i = 0; i < del.length; i++){
+//     del[i].addEventListener('click', delBlock);
+// }
 
-    for (let  i= 0;  i < mainBlock.length; i++) {
-        mainBlock[i].classList.add('none');
+
+const wrapper = document.querySelector('.popup__main');
+const mainBlock = document.querySelectorAll('.popup__boost');
+const delBtn = document.querySelectorAll('.popup__delete');
+wrapper.addEventListener('click', event => {
+    console.log(event.target.className);
+    if (event.target.classList.contains('popup__delete')) {
+        event.target.parentElement.classList.add('none');
+        console.log(event.target.parentElement);
     }
-}
-for(let i = 0; i < del.length; i++){
-    del[i].addEventListener('click', delBlock);
-}
+})

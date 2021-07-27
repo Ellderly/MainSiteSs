@@ -146,7 +146,7 @@ body {
   background: #121111;
 }
 .wrapper .header {
-  background: linear-gradient(360deg, #131212 4.84%, rgba(19, 18, 18, 0.610513) 36.63%, rgba(19, 18, 18, 0.29) 52.74%), url(../img/fullscreen-image.jpg);
+  background: linear-gradient(360deg, #131212 4.84%, rgba(19, 18, 18, 0.610513) 36.63%, rgba(19, 18, 18, 0.29) 52.74%), url(../img/fullscreen-image-2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -568,7 +568,7 @@ body {
   background: #f1433a;
   color: #fff;
 }
-.wrapper .header .container__header .header__nav .header__menu-list li:first-child a {
+.wrapper .header .container__header .header__nav .header__menu-list li:nth-child(2) a {
   background: #f1433a;
   color: #fff;
 }

@@ -21,6 +21,12 @@
   color: #f1433a;
   background: #fff;
 }
+@media (max-width: 660px) {
+  .btn {
+    padding: 15px 24px;
+    border-radius: 15px;
+  }
+}
 .section {
   padding: 50px 0 0 0;
   color: #fff;
@@ -48,6 +54,14 @@ h4 {
 }
 .title p {
   margin: 0 0 0 20px;
+}
+@media (max-width: 660px) {
+  .title h2 {
+    font-size: 20px;
+  }
+  .title p {
+    display: none;
+  }
 }
 .cup-text {
   color: #5a5a5a;
@@ -207,11 +221,12 @@ body {
   cursor: pointer;
   border: 0;
   background: rgba(241, 67, 58, 0.28);
+  background-image: url(../img/bin.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 13.5px;
   border-radius: 12px;
   position: absolute;
-}
-.popup .popup__container-menu .flex-wrapper .popup__main .popup__boost .popup__delete img {
-  width: 13.5px;
 }
 @media (max-width: 600px) {
   .popup .popup__container-menu .flex-wrapper .popup__main .popup__boost {

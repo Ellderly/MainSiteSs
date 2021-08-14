@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>test</title>
+</head>
+<body>  
+    <header class="header">
+        <div class="slider">
+            <div class="slide"></div>
+            <div class="slide"></div>
+        </div>
+        <div class="header__container container">
+            <div class="header__menu">
+                <div class="header__flex-wrapper">
+                    <h1 class="header__title">ДОБРИВО</h1>
+                    <ul class="header__flex-menu">
+                        <li><a href="#">Оплата и доставка</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Справочник</a></li>
+                        <li><a href="#">Сертификаты</a></li>
+                        <li>                    
+                            <select name="lang" id="lang" class="header__lang">
+                            <option selected value="RU">RU</option>
+                            <option value="EU">EU</option>
+                            <option value="UA">UA</option>
+                        </select>
+                    </li>
+                    </ul>
+                </div>
+                <nav class="header__navigation-menu">
+                    <ul class="header__menu-list">
+                        <li><a href="#">НАГРО-УДОБРЕНИЕ</a></li>
+                        <li><a href="#">БиоДизель</a></li>
+                        <li><a href="#">СИЛКО</a></li>
+                        <li><a href="#">Интернет-магазин</a></li>
+                        <li><a href="#">Вопросы-ответы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#" class="header__basket"><span></span>Корзина</a></li>
+                    </ul>
+                </nav>
+                <div class="burger">
+                    <span></span>
+                </div>
+            </div>
+            <div class="header__big-text">
+                <p class="header__p1">ОРГАНИЧЕСКОЕ</p>
+                <p class="header__p2">НАНО-УДОБНИЕ</p>
+                <p class="header__p3">ДОБРИВО</p>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+            <section class="about">
+                <div class="about__flex-wrapper">
+                    <div class="about__flex-block about__flex-block _first">
+                        <img src="img/oil-image-min.png" alt="oil" class="about__oil-img">
+                        <div class="about__progress">
+                            <div class="about__progress-item">
+                                <img src="img/star-min.png" alt="star">
+                                <div class="about__text">
+                                    <h5>ПРИРОСТ УРОЖАЯ</h5>
+                                    <div class="about__text-sup">в сравнении с химическим удобрением</div>
+                                    <p class="about__percent">30%-250%</p>
+                                </div>
+                            </div>
+                            <div class="about__progress-item">
+                                <img src="img/star-min.png" alt="star">
+                                <div class="about__text">
+                                    <h5>ЭКОНОМИЯ</h5>
+                                    <div class="about__text-sup">химических удобрений в хозяйстве</div>
+                                    <p class="about__percent">30%-250%</p>
+                                </div>
+                            </div>
+                            <div class="about__progress-item">
+                                <img src="img/star-min.png" alt="star">
+                                <div class="about__text">
+                                    <h5>РОСТ КОРНЕВОЙ</h5>
+                                    <div class="about__text-sup">системы растений при использовании</div>
+                                    <p class="about__percent">30%-250%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__flex-block">
+                        <p class="about__more-text">Хотитите <br> трали-вали <br> ла-лала?</p>
+                        <div class="about__more-content">
+                            <h3>УЗНАЙТЕ <br> О НАГРО БОЛЬШЕ!</h3>
+                            <a href="#" class="about__more-btn">УЗНАТЬ БОЛЬШЕ</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <aside class="aside">
+                <div class="aside__calculator-wrapper">
+                    <div class="aside__calculator-content">
+                        <h4 class="aside__title">посчитайте прибыль </h4>
+                        <p class="aside__text"><span class="aside__text-bold">ДОБРИВО</span> ЭФФЕКТИВНЕЕ ХИМИИ</p>
+                        <div class="aside__calculator">
+                            <div class="aside__culture calculator-item">
+                                <p>Выберите культуру</p>
+                                <select name="culture" id="culture">
+                                    <option value="3100" selected>Пшеница  3100 грн / т</option>
+                                    <option value="2500">Ячмень  2500 грн / т</option>
+                                </select>
+                            </div>
+                            <div class="aside__yield calculator-item">
+                                <p>Урожайность, ц/га</p>
+                                <input type="text" name="yield" id="yield" value="20">
+                            </div>
+                            <div class="aside__fortilizer-cost calculator-item">
+                                <p>Стоимость хим. удобрения, грн/га</p>
+                                <input type="text" name="fortilizer-cost" id="fortilizerCost" value="3000">
+                            </div>
+                            <div class="aside__sown-area calculator-item">
+                                <p>Посевная площадь, га</p>
+                                <input type="text" name="sown-area" id="sownArea" value="10">
+                            </div>
+                        </div>
+                        <div class="aside__result">
+                            <button class="aside__result-title" id="btnPrice">Прибыль от ДОБРИВА</button>
+                            <div class="aside__result-price"></div>
+                            <div class="cub-price">грн</div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

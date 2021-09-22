@@ -30,3 +30,9 @@ p {
   height: 1px;
   background: #c4050c;
 }
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+}

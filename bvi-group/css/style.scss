@@ -21,6 +21,9 @@
       }
       .header__logo {
         max-width: 204px;
+        @media (max-width: 700px) {
+          max-width: 120px;
+        }
       }
       .header__icon {
         width: 28px;
@@ -29,7 +32,7 @@
     @media (max-width: 950px) {
       top: 0;
       left: 0;
-      width: 90%;
+      width: 100%;
       position: fixed;
       background-color: #eff2f6;
       padding-top: 20px;
@@ -46,7 +49,7 @@
         width: 40px;
         height: 30px;
         position: relative;
-
+        margin: 0 90px 0 0;
         z-index: 13;
         &:before,
         &::after {
@@ -76,6 +79,7 @@
 .main {
   .sectionHeader {
     position: relative;
+    overflow: hidden;
     padding: 60px 0;
     .swiper-container {
       position: absolute;
@@ -180,7 +184,7 @@
       li {
         .navbar__item {
           color: rgb(66, 66, 66);
-          transition: 0.2s;
+          transition: 1.4s;
           &:hover {
             color: #c7181e;
           }
@@ -189,7 +193,7 @@
     }
     @media (max-width: 950px) {
       display: flex;
-      transform: translateY(1000px);
+      transform: translateY(3000px);
       align-items: center;
       position: fixed;
       top: 0;

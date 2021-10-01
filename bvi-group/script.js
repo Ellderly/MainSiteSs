@@ -29,4 +29,5 @@ const burger = document.querySelector('.burger');
 burger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
     body.classList.toggle('block');
+    burger.classList.toggle('all')
 })

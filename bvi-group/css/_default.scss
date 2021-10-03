@@ -6,7 +6,6 @@ body {
   margin: 0;
   font-family: Roboto, sans-serif;
   overflow-x: hidden;
-  background: #000;
 }
 ._container {
   max-width: 1100px;
@@ -28,7 +27,7 @@ p {
 .line {
   width: 60px;
   height: 1px;
-  background: #c4050c;
+  background: #81afe4;
 }
 .fixed {
   position: fixed;
@@ -38,4 +37,31 @@ p {
 }
 .block {
   overflow: hidden;
+}
+
+.nav-page {
+  cursor: pointer;
+  margin: 15px 0 0 0;
+  span {
+    color: #81afe4;
+  }
+  a {
+    color: #272727;
+    transition: 0.2s;
+    &:hover {
+      color: #81afe4;
+    }
+  }
+}
+.title-text {
+  padding: 40px 0 0 0;
+  text-align: center;
+  h3 {
+    color: #272727;
+    font-size: 30px;
+    margin: 0;
+  }
+  .line {
+    margin: 0 auto;
+  }
 }

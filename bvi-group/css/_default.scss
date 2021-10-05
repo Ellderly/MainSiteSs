@@ -65,3 +65,112 @@ p {
     margin: 0 auto;
   }
 }
+
+.form-reg {
+  padding: 35px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+  margin: 90px auto 50px;
+  h2 {
+    font-size: 33px;
+    font-weight: 400;
+    color: #96a6b5;
+    margin: 0 0 8px 0;
+  }
+  p {
+    color: #272727;
+  }
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    max-width: 570px;
+    margin: 30px auto 0;
+    gap: 20px;
+    input {
+      flex: 40% 0 0;
+      color: #272727;
+      border: none;
+      border-bottom: 1px solid #000;
+      box-sizing: border-box;
+      padding: 0 0 8px 0;
+      &::placeholder {
+        color: #272727;
+      }
+    }
+    .comment {
+      display: flex;
+      flex: 40% 0 0;
+      font-size: 14px;
+      color: #272727;
+      text-align: left;
+      flex-direction: column;
+      textarea {
+        color: #272727;
+        height: 50px;
+        resize: none;
+      }
+    }
+    .contact-submit {
+      padding: 20px 50px;
+      font-size: 16px;
+      box-sizing: border-box;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      background: #81afe4;
+      transition: 0.2s;
+      &:hover {
+        background: #5c9be4;
+      }
+    }
+    @media (max-width: 550px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+.navbar {
+  z-index: 100;
+  // background: #252525;
+  background: #eff2f6;
+  transition: 0.2s;
+  padding: 25px 0;
+  .navber__menu {
+    display: flex;
+    justify-content: space-evenly;
+    li {
+      .navbar__item {
+        color: rgb(66, 66, 66);
+        transition: 1.4s;
+        &:hover {
+          color: #013559;
+        }
+      }
+    }
+  }
+  @media (max-width: 950px) {
+    display: flex;
+    transform: translateY(3000px);
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 11;
+    .navber__menu {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      li {
+        margin: 30px 0;
+      }
+    }
+  }
+}
+.navbar.active {
+  transform: translateY(-0);
+}

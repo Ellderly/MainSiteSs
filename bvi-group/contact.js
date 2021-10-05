@@ -1,4 +1,4 @@
-const services = document.querySelector('.sectionHeader');
+// const services = document.querySelector('.sectionHeader');
 const header = document.querySelector('.header');
 const navMenu = document.querySelector('.navbar')
 window.addEventListener('scroll', () => {

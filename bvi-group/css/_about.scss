@@ -1,0 +1,120 @@
+.about {
+  h3 {
+    font-size: 22px;
+  }
+  .about__text {
+    padding: 20px 50px 0;
+    color: #272727;
+    font-size: 15px;
+    line-height: 25px;
+    span {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+}
+
+.about__goal {
+  background: #ebebeb;
+  box-sizing: border-box;
+  padding: 20px 0 50px;
+  border-left: 6px solid #c4050c;
+  margin: 50px auto 0;
+  h3 {
+    margin: 0 0 15px 0;
+    color: #454545;
+    text-align: center;
+  }
+  ul {
+    list-style-type: disc;
+    color: #454545;
+    padding: 0 0 0 40px;
+    line-height: 25px;
+  }
+}
+.about__gallery {
+  h3 {
+    color: #272727;
+  }
+  .about__list {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    .about__item {
+      flex: 300px 0 1;
+      img {
+        width: 100%;
+        filter: grayscale(1);
+        transition: 0.2s;
+      }
+      &:hover img {
+        filter: grayscale(0);
+      }
+    }
+  }
+}
+.about__order {
+  position: relative;
+  margin: 70px 0 0 0;
+  .about__order-item {
+    position: relative;
+    z-index: 3;
+    cursor: default;
+    box-sizing: border-box;
+    background: #2a2834;
+    max-width: 500px;
+    padding: 40px 30px;
+    color: #fff;
+    h2 {
+      font-size: 45px;
+      margin: 0 0 15px 0;
+      span {
+        font-weight: 500;
+      }
+    }
+    .about__order-btn {
+      display: inline-block;
+      color: #fff;
+      font-size: 16px;
+      padding: 8px 25px;
+      border-radius: 5px;
+      background: #81afe4;
+      transition: 0.2s;
+      margin: 10px 0 0 0;
+      &:hover {
+        background: #5c9be4;
+      }
+    }
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 35px;
+      }
+    }
+    @media (max-width: 450px) {
+      padding: 25px 20px;
+      h2 {
+        font-size: 25px;
+      }
+    }
+    @media (max-width: 380px) {
+      h2 {
+        font-size: 20px;
+      }
+    }
+  }
+  &::before {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-image: url(../img/predpriyatie-metalloobrabotki.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+  }
+}

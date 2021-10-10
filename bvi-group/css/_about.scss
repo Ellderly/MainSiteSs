@@ -20,6 +20,9 @@
   padding: 20px 0 50px;
   border-left: 6px solid #c4050c;
   margin: 50px auto 0;
+  .about__block + .about__block {
+    margin-top: 40px;
+  }
   h3 {
     margin: 0 0 15px 0;
     color: #454545;

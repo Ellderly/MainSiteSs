@@ -410,7 +410,21 @@
       &._logo-elem {
         gap: 10px;
       }
-
+      .footer__tel {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .footer__network {
+          display: flex;
+          justify-content: space-between;
+          a {
+            width: 25px;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
       .footer__logo {
         width: 150px;
       }

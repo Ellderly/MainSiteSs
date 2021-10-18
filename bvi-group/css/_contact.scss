@@ -7,6 +7,11 @@
   }
 }
 .wrapper__content {
+  .title-text {
+    h3 {
+      padding: 0 0 10px 0;
+    }
+  }
   .contact__main {
     display: flex;
     justify-content: space-between;
@@ -38,6 +43,17 @@
         gap: 10px;
         span {
           font-weight: bold;
+        }
+      }
+      .network {
+        display: flex;
+        max-width: 200px;
+        justify-content: space-between;
+        a {
+          width: 25px;
+          img {
+            width: 100%;
+          }
         }
       }
     }

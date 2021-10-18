@@ -19,12 +19,20 @@
         @media (max-width: 500px) {
           width: 100px;
         }
+        @media (max-width: 400px) {
+          width: 75px;
+        }
       }
       .header__logo-text {
         font-size: 25px;
         font-weight: bold;
         @media (max-width: 500px) {
           font-size: 20px;
+        }
+        @media (max-width: 440px) {
+          .br-logo {
+            display: block;
+          }
         }
       }
       a {
@@ -45,6 +53,9 @@
       .header__icon {
         width: 28px;
       }
+      // @media (max-width: 400px) {
+      //   max-width: 180px;
+      // }
     }
     @media (max-width: 950px) {
       top: 0;
@@ -409,6 +420,8 @@
       align-items: center;
       &._logo-elem {
         gap: 10px;
+        flex-direction: column;
+        align-items: center;
       }
       .footer__tel {
         display: flex;

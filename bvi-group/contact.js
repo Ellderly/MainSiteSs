@@ -23,15 +23,22 @@ burger.addEventListener('click', () => {
 })
 
 function initMap() {
-    let posTop = {lat: 50.455548613864124, lng: 30.47703876248843};    50.455548613864124, 30.47703876248843
-    let pos = {lat: 50.45524188546683, lng: 30.477174299380934};    
-    let pos2 = {lat:  50.455528214873986, lng: 30.475779652787846};
+    let posTop = {lat: 50.45468437690826, lng:  30.476821067043556}; 
+    let lleftArrow = {lat: 50.45537173367899, lng: 30.47726631372358};
+    let rigtArrow = {lat: 50.45543150336045, lng: 30.476877393430325};
+    let posVianor = {lat: 50.45515896167547, lng: 30.477244296106427};  
+    let barPos = {lat: 50.45504129136181, lng:  30.476952495284557};  
+    let medPos = {lat: 50.45547784585116, lng:  30.475989325863303}; 
     let coordinates = {
-    center: {lat: 50.455584, lng: 30.476922},
+    center: {lat:  50.45511154341311, lng: 30.476938084714327},
     zoom: 18
 };
-    image = 'img/img-shin.png';
     image2 = 'img/med.png';
+    rightArrow = 'img/rightArrow.png';
+    leftArrow = 'img/leftArrow.png';
+    viaonorImg = 'img/vianor.png'; 
+    barrierr = 'img/barrier.png';
+    medImage = 'img/mediland.png'
 
     map = new google.maps.Map(document.getElementById('map'), coordinates);
     
@@ -41,15 +48,31 @@ function initMap() {
         animation: google.maps.Animation.DROP,
     });
 
-    let marker = new google.maps.Marker({
-        position: pos,
+    let rArrow = new google.maps.Marker ({
+        position: rigtArrow,
         map: map,
-        icon: image
-    });
-    let secmarker = new google.maps.Marker ({
-        position: pos2,
-        map: map,
-        icon: image2
+        icon: rightArrow
     });
 
+    let lArrow = new google.maps.Marker ({
+        position: lleftArrow,
+        map: map,
+        icon: leftArrow
+    });
+
+    let marker = new google.maps.Marker({
+        position: posVianor,
+        map: map,
+        icon: viaonorImg
+    });
+    let secmarker = new google.maps.Marker ({
+        position: medPos,
+        map: map,
+        icon: medImage
+    });
+    let barrier = new google.maps.Marker ({
+        position: barPos,
+        map: map,
+        icon: barrierr
+    });
 }

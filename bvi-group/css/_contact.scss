@@ -41,8 +41,22 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        .contact__tele {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          a {
+            display: block;
+            color: #272727;
+            font-size: 14px;
+          }
+          @media (max-width: 350px) {
+            display: block;
+          }
+        }
         span {
           font-weight: bold;
+          color: #272727;
         }
       }
       .network {

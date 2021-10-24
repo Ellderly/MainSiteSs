@@ -7,9 +7,13 @@
     color: #272727;
     font-size: 15px;
     line-height: 25px;
-    span {
-      font-size: 18px;
-      font-weight: bold;
+    .about__ph {
+      text-align: center;
+      span {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+      }
     }
   }
 }
@@ -29,14 +33,21 @@
     text-align: center;
   }
   ul {
-    list-style: url(../img/verification-checkmark-symbol.png);
+    // list-style: url(../img/verification-checkmark-symbol.png);
     color: #454545;
     padding: 0 0 0 40px;
     line-height: 25px;
+    &.about__block-f {
+      list-style: url(../img/target.png);
+    }
+    &.about__block-l {
+      list-style: url(../img/goal.png);
+    }
   }
 }
 .about__gallery {
   h3 {
+    text-align: center;
     color: #272727;
   }
   .about__list {

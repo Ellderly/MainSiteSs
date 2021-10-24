@@ -9,11 +9,11 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__container _container">
+        <div class="header__container "> <!--   class = _container -->
             <a href="#" class="header__elem _logo-elem"><img src="img/logo-1.png" alt="logo" class="header__logo"> <span class="header__logo-text">ТЕХНОКЛАСТЕР</span></a>
             <div class="header__elem h-elem-1">
                 <img src="img/maps-and-flags.svg" alt="icon" class="header__icon">
-                <a href="https://goo.gl/maps/rWWwxzp19amnp4hz5">м. Київ, <br> ул. Маршала Рыбалко, 11</a>
+                <a href="https://goo.gl/maps/rWWwxzp19amnp4hz5">м. Київ, <br> вул. Маршала Рибалка, 11</a>
             </div>
             <div class="header__elem h-elem-3">
                 <img src="img/call.svg" alt="icon-phone" class="header__icon">
@@ -34,7 +34,6 @@
                 <li><a href="index.html" class="navbar__item">Головна</a></li>
                 <li><a href="services.html" class="navbar__item">Послуги</a></li>
                 <li><a href="about.html" class="navbar__item">Про нас</a></li>
-                <li><a href="#" class="navbar__item">Готові роботи</a></li>
                 <li><a href="" class="navbar__item">Контакти</a></li>
             </ul>
         </div>
@@ -47,15 +46,21 @@
     <div class="contact__main _container">
         <div class="contact__text">
             <h4>Зв'язатися з нами</h4>
-            <p>Для отримання додаткової інформації або запиту про наших продуктах, проектах і цінах, будь ласка, зв'яжіться з нами.</p>
+            <p>Для отримання додаткової інформації або запиту про наші продукти, проекти та ціни, будь ласка, зв'яжіться з нами.</p>
             <div class="contact__contact">
                 <div class="contact__item">
                     <img src="img/navigation.png" alt="navigation">
-                   <p><span> Адреса</span>: ул. Маршала Рыбалко, 11</p>
+                   <p><span> Адреса</span>: вул. Маршала Рибалка, 11</p>
                 </div>
                 <div class="contact__item">
                     <img src="img/communications.png" alt="navigation">
-                   <p><span> Телефон</span>: +38 (095) 560 94 44</p>
+                   <div class="contact__tele">
+                       <span>Телефон: </span>
+                       <div class="contact__phone">
+                        <a href="tel:+380675609444">+38 (067) 560 94 44</a>
+                        <a href="tel:+380955609444">+38 (095) 560 94 44</a>
+                       </div>
+                    </div>
                 </div>
                 <div class="network">
                     <a href="#"><img src="img/telegram-green.svg" alt=""></a>
@@ -70,12 +75,11 @@
         </div>
         <div class="contact__image">
             <div class="contact__map" id="map"></div>
-            <!-- <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.2207456935016!2d30.47529251564328!3d50.455613943420325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce7df88995ef%3A0x45d6b4fa7191a582!2z0YPQuy4g0JzQsNGA0YjQsNC70LAg0KDRi9Cx0LDQu9C60L4sIDExLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1634468347782!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
         </div>
     </div>
     <div class="form-reg _container">
-        <h2>Узнать подробнее о сотрудничестве</h2>
-        <p>Оставьте заявку и наш менеджер свяжется с вами в ближайшее время.</p>
+        <h2>Дізнатися докладніше про співпрацю</h2>
+        <p>Залиште заявку і наш менеджер зв'яжеться з вами найближчим часом.</p>
         <form action="#" class="form">
             <input type="text" name="name" placeholder="Ваше ім'я:">
             <input type="tel" name="tel" placeholder="Телефон:">
@@ -91,8 +95,8 @@
         <div class="footer__elem">
             <img src="img/call.svg" alt="icon-phone" class="footer__icon">
             <div class="footer__tel">
-                <a href="tel:+380955609444">+38 (095) 560 94 44</a>
                 <a href="tel:+380675609444">+38 (067) 560 94 44</a>
+                <a href="tel:+380955609444">+38 (095) 560 94 44</a>
                 <div class="footer__network">
                     <a href="#"><img src="img/telegram.svg" alt=""></a>
                     <a href="https://wa.me/380955609444"><img src="img/whatsapp.svg" alt=""></a>
@@ -103,11 +107,11 @@
         <a href="#" class="footer__elem _logo-elem"><img src="img/logo-1.png" alt="logo" class="footer__logo"> <span class="footer__logo-text">ТЕХНОКЛАСТЕР</span></a>
         <div class="footer__elem">  
             <img src="img/maps-and-flags.svg" alt="icon" class="footer__icon">
-            <a href="https://goo.gl/maps/rWWwxzp19amnp4hz5">м. Київ, <br> ул. Маршала Рыбалко, 11</a>
+            <a href="https://goo.gl/maps/rWWwxzp19amnp4hz5">м. Київ, <br> вул. Маршала Рибалка, 11</a>
         </div>
     </div>
     <div class="info">© 2021 Технокластер. Всі права захищені</div>
-</footer>   
+</footer>    
 
     <script src="contact.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2ZRSAs9vDpkQS7E4oM2sYvhqaMAs7xZ8&callback=initMap" async defer></script>

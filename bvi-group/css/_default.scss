@@ -144,12 +144,16 @@ p {
     li {
       .navbar__item {
         color: rgb(66, 66, 66);
+        font-size: 16px;
         transition: 1.4s;
         &:hover {
           color: #013559;
         }
       }
     }
+  }
+  &.navbar__other {
+    padding: 0 0 25px 0;
   }
   @media (max-width: 950px) {
     display: flex;
